@@ -1,15 +1,13 @@
 package com.company;
 
-public class Trains {
-private int quantity;
+public class Train {
+private int wagonsquantity;
     private String state;
 
-public void maintenance(int quantity)
-    {
-        int pertrain = 2500;
-int maintenance = quantity*pertrain;
-        System.out.println("Годовое содержание" + quantity + " поездов - " + maintenance);
-    }
+public Train(Object Loco)
+{
+
+}
 
     public void state(String state)
     {

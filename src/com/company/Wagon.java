@@ -1,22 +1,30 @@
 package com.company;
 
 public class Wagon {
-    private int length;
-    private int spots = 225;
-    private String status; //эконом, бизнес, вип
-    private int spotcost1 = 1500;
-    private int spotcost2 = 3000;
-    private int spotcost3 = 6000;
-    int cost;
+   double length;
+    int value;
 
 
-public int calculatewagoncost(String status)
-{ switch (status) {
-    case "эконом": cost = spotcost1*spots; break;
-    case  "бизнес": cost = spotcost2*spots; break;
-    case  "вип": cost = spotcost3*spots; break;
+public Wagon (double length, int value)
+{
+    this.length=length;
+    this.value=value;
+
 }
-    return(cost);
+
+public void transfer (String cityfrom,String cityto, int number )
+{
+    System.out.printf("Вагон номер %s перевезён из города %s в город %s", number, cityfrom, cityto);
 }
+
+
+//public int calculate_wagon_cost(String status)
+//{ switch (status) {
+//    case "эконом": cost = spot_cost1*spots; break;
+//    case  "бизнес": cost = spot_cost2*spots; break;
+//    case  "вип": cost = spot_cost3*spots; break;
+//}
+//    return(cost);
+//}
 
 }

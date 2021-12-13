@@ -1,8 +1,12 @@
-package com.company;
+package com.company.Wagon;
 
-public class Wagon {
-   double length;
+import com.company.Interfaces.SELL;
+import com.company.Interfaces.TERMINATE;
+
+public abstract class Wagon implements SELL, TERMINATE {
+ double length;
     int value;
+    boolean existence = true;
 
 
 public Wagon (double length, int value)
@@ -14,7 +18,7 @@ public Wagon (double length, int value)
 
 public void transfer (String cityfrom,String cityto, int number )
 {
-    System.out.printf("Вагон номер %s перевезён из города %s в город %s", number, cityfrom, cityto);
+    System.out.printf("\nВагон номер %s перевезён из города %s в город %s", number, cityfrom, cityto);
 }
 
 
